@@ -8,3 +8,12 @@ $('.navTrigger').click(function () {
 $("#mainListDiv li").click(function() {
   $("#mainListDiv").removeClass("show_list");
 });
+
+$(window).scroll(function() {
+  if ($(document).scrollTop() > 50) {
+      $('.nav').addClass('affix');
+      console.log("OK");
+  } else {
+      $('.nav').removeClass('affix');
+  }
+});
