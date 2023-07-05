@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olho de Águia Telecom</title>
+    <link rel="icon" type="image/x-icon" href="templates/favicon.ico">
+    <link rel="stylesheet" href="templates/style.css">
+</head>
+<body>
+    <header id="home">
+        <nav class="nav">
+            <div class="container logo_col">
+                <a class="text-logo" href="#home">
+                        Olho de 
+                        <span style="font-weight: 300;" class="span12"> Águia</span>
+                    </a>    
+                <div id="mainListDiv" class="main_list">
+                    <ul class="navlinks">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Serviços</a></li>
+                        <li><a href="#team">Quem Somos</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+                <span class="navTrigger">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </span>
+            </div>
+        </nav>
+    </header>
+    
+    <section class="home">
+        <div style="height: 1000px"></div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2 class="myH2">Nossos Serviços</h2>
+            <div class="service">
+                <i class="fas fa-wifi"></i>
+                <h3 class="myH3">Internet Empresarial</h3>
+                <p class="myP">Conexão de alta velocidade para manter sua empresa sempre conectada.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-phone-alt"></i>
+                <h3 class="myH3">Telefonia Fixa</h3>
+                <p class="myP">Opções de telefonia fixa para comunicação interna e externa da sua empresa.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-mobile-alt"></i>
+                <h3 class="myH3">Telefonia Móvel</h3>
+                <p class="myP">Planos personalizados para atender às necessidades de comunicação da sua empresa.</p>
+            </div>
+        </div>
+      </section>
+        
+    <footer>
+        <div class="container">
+          <p>&copy; 2023 Olho de Águia Telecom. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    
+    <!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+    
+    <!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
+    <script src="https://kit.fontawesome.com/fa831e7c77.js" crossorigin="anonymous"></script>
+</body>
+</html>
