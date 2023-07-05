@@ -18,7 +18,6 @@
                 <div id="mainListDiv" class="main_list">
                     <ul class="navlinks">
                         <li><a href="#services">Serviços</a></li>
-                        <li><a href="#team">Quem Somos</a></li>
                         <li><a href="#contact">Contato</a></li>
                     </ul>
                 </div>
@@ -56,7 +55,56 @@
                 </div>
             </div>
         </div>
-      </section>
+    </section>
+
+    <section id="contact">
+        <div class="form_col">
+            <div class="form_padding">
+                <h2 class="myH3">Fale conosco</h2>
+            <form>
+                <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                </div>
+
+                <div class="form-group">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+                </div>
+
+                <div class="form-group">
+                <label for="cnpj">CNPJ:</label>
+                <input type="text" id="cnpj" name="cnpj" required>
+                </div>
+
+                <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                <label for="assunto">Assunto:</label>
+                <select id="assunto" name="assunto" required>
+                    <option value="">Selecione o assunto</option>
+                    <option value="suporte">Suporte</option>
+                    <option value="vendas">Vendas</option>
+                    <option value="outra">Outra solicitação</option>
+                </select>
+                </div>
+
+                <div class="form-group">
+                <label for="detalhes">Detalhes da Solicitação:</label>
+                <textarea id="detalhes" name="detalhes" rows="4" required></textarea>
+                </div>
+
+                <div class="form-button">
+                <button type="submit">Enviar</button>
+                </div>
+            </form>
+
+            </div>
+        </div>
+    </section>
         
     <footer>
         <div class="container">
