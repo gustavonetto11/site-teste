@@ -72,7 +72,7 @@ a.text-logo{
 
 .home {
     width: 100%;
-    height: 75vh;
+    height: 600px;
     background-image: url(https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80);
     background-position: center top;
 	background-size:cover;
@@ -80,6 +80,7 @@ a.text-logo{
 
 .navTrigger {
     display: none;
+    padding-right: 5%;
 }
 
 .nav {
@@ -90,21 +91,33 @@ a.text-logo{
 }
 
 .service {
-    text-align: center;
-    padding: 20px;
-    width: 30%;
-    border: solid;
-    border-radius: 15px;
-    margin: 10px;
-    background-color: #fff;
-}  
-
-.service i {
-    align-self: center;
-    font-size: 36px;
-    margin-bottom: 20px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
 }
 
+.service-group{
+    display: block;
+    border: solid;
+    border-radius: 15px;
+    text-align: center;
+    width: 28%;
+    margin: 5px;
+    padding: 15px;
+    background-color: #fff;
+}
+
+
+
+.service-group i {
+    align-self: center;
+    font-size: 36px;
+    margin: 20px;
+}
+
+.section {
+    margin-bottom: 30px;
+}
 
 /* Media qurey section */
 @media screen and (max-width:768px) {
@@ -362,33 +375,43 @@ a.text-logo{
 	padding-right:15%;
 	font-size: 20px;
 }
-@media all and (max-width:700px){
+@media all and (max-width:768px){
 	.myP {
 		padding:2%;
 	}
 }
 
+#contact{
+   align-items: center;
+   align-content: center;
+   justify-content: center;
+} 
+
 .form_col{
-    box-sizing: border-box;
-    padding-right: 15px;
-    padding-left: 15px;
-}
+    width: 60%;
+    border: solid;
+    border-radius: 15px;
+    margin-left: 20%;
+    margin-right: 20%;
+    }
 
 .form_padding{
-    padding: 48px;
+    padding-left: 10%;
+    padding-bottom: 10%;
+    padding-top: 10%;
+    width: 100% ;
 }
-
-.contact{
-    box-sizing: border-box;
-    padding: 20px;
-    margin: 0;
-    background-color: #fff;
-}   
 
 .form-group {
     margin-bottom: 20px;
+    width: 100%;
+    font-size: 14px;
   }
 
+  .form-details {
+    font-size: 14px;
+    width: 100%;
+  }
   label {
     display: block;
     font-weight: bold;
@@ -398,9 +421,10 @@ a.text-logo{
   input,
   textarea,
   select {
-    width: 60%;
+    width: 80%;
     padding: 10px;
     border: 1px solid #ccc;
+    font-size: 14px;
     border-radius: 4px;
     resize: vertical;
   }
@@ -411,12 +435,15 @@ a.text-logo{
 
   .form-button {
     text-align: center;
-  }
+    padding-top: 10px;
+    padding-right: 40%;
+    padding-left: 15%;
+}
 
   .form-button button {
-    padding: 10px 20px;
+    padding: 10px 50px;
     font-size: 16px;
-    background-color: #4CAF50;
+    background-color: #9d50a7;
     color: white;
     border: none;
     border-radius: 4px;
@@ -424,12 +451,37 @@ a.text-logo{
   }
 
   /* Estilos adicionais para tornar o formulário responsivo em dispositivos móveis */
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
     .form-group {
-      width: 100%;
+        width: 300px;
+        margin: 0;
+        padding-bottom: 10px;
     }
 
+    .form-details {
+        width: 300px;
+        margin: 0;
+    }
+
+    .form-button {
+        text-align: center;
+        padding-top: 10px;
+        padding-left: 15%;
+    }
+
+    .service-group {
+        width: 100%;
+        margin: 5px;
+    }
+    .form_col {
+        width:95%;
+        padding: 0;
+        margin: 5px;
+    }
+    .form_padding {
+        margin: 0;
+    }
     .form-button button {
-      width: 100%;
+        width: 100%;
     }
   }

@@ -30,38 +30,36 @@
         </nav>
     </header>
     
-    <section class="home">
+    <section class="home" class="section">
         <div style="height: 1000px"></div>
     </section>
 
-    <section id="services">
-        <div class="container">
+    <section id="services" class="section">
             <h2 class="myH2">Nossos Serviços</h2>
-            <div style="display:flex; justify-content: center; align-content: center;">
-                <div class="service">
+            <div class="service service-col">
+                <div class="service-group">
                     <i class="fas fa-wifi"></i>
                     <h3 class="myH3">Internet Empresarial</h3>
                     <p class="myP">Conexão de alta velocidade para manter sua empresa sempre conectada.</p>
                 </div>
-                <div class="service">
+                <div class="service-group">
                     <i class="fas fa-phone-alt"></i>
                     <h3 class="myH3">Telefonia Fixa</h3>
                     <p class="myP">Opções de telefonia fixa para comunicação interna e externa da sua empresa.</p>
                 </div>
-                <div class="service">
+                <div class="service-group">
                     <i class="fas fa-mobile-alt"></i>
                     <h3 class="myH3">Telefonia Móvel</h3>
                     <p class="myP">Planos personalizados para atender às necessidades de comunicação da sua empresa.</p>
                 </div>
             </div>
-        </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="section">
+        <h2 class="myH2">Fale conosco</h2>
         <div class="form_col">
-            <div class="form_padding">
-                <h2 class="myH3">Fale conosco</h2>
-            <form>
+            <div>
+            <form class="form_padding">
                 <div class="form-group">
                 <label for="nome">Nome:</label>
                 <input type="text" id="nome" name="nome" required>
@@ -83,23 +81,24 @@
                 </div>
 
                 <div class="form-group">
-                <label for="assunto">Assunto:</label>
-                <select id="assunto" name="assunto" required>
-                    <option value="">Selecione o assunto</option>
-                    <option value="suporte">Suporte</option>
-                    <option value="vendas">Vendas</option>
-                    <option value="outra">Outra solicitação</option>
-                </select>
+                    <label for="assunto">Assunto:</label>
+                    <select id="assunto" name="assunto" required>
+                        <option value="">Selecione o assunto</option>
+                        <option value="suporte">Suporte</option>
+                        <option value="vendas">Vendas</option>
+                        <option value="outra">Outra solicitação</option>
+                    </select>
                 </div>
 
-                <div class="form-group">
+                <div class="form-details">
                 <label for="detalhes">Detalhes da Solicitação:</label>
                 <textarea id="detalhes" name="detalhes" rows="4" required></textarea>
                 </div>
-
+        
                 <div class="form-button">
                 <button type="submit">Enviar</button>
                 </div>
+
             </form>
 
             </div>
