@@ -139,6 +139,7 @@ a.text-logo:hover{
         width: 100%;
         height: 0;
         overflow: hidden;
+        padding-right:5%;
     }
     .nav div.show_list {
         height: auto;
@@ -158,6 +159,7 @@ a.text-logo:hover{
     .nav div.main_list ul li {
         width: 100%;
         text-align: right;
+        padding-right: 5%;
     }
     .nav div.main_list ul li a {
         text-align: center;
